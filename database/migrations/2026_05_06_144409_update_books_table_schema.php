@@ -12,6 +12,7 @@ return new class extends Migration
     public function up(): void
     {
         Schema::table('books', function (Blueprint $table) {
+            $table->dropUnique(['isbn']);
             $table->dropColumn('isbn');
             $table->integer('published_year')->after('author');
         });
