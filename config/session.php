@@ -60,8 +60,8 @@ return [
     |
     */
 
-    'files' => storage_path('framework/sessions'),
-
+    'files' => '/tmp/storage/framework/sessions',
+    
     /*
     |--------------------------------------------------------------------------
     | Session Database Connection
